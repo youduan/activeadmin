@@ -137,4 +137,12 @@ describe ActiveAdmin::Application do
     end
   end
 
+  describe "#register_share", focus: true do
+    it "register the share" do
+      share = Proc.new{}
+      application.register_share("Share", &share)
+      expect(application.shares.size).to eq 1
+      expect(application.shares).to include("Share" => share)
+    end
+  end
 end

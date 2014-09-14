@@ -15,9 +15,10 @@ module ActiveAdmin
     #
     setting :default_namespace, :admin
 
-    attr_reader :namespaces
+    attr_reader :namespaces, :shares
     def initialize
       @namespaces = {}
+      @shares     = {}
     end
 
     # Load paths for admin configurations. Add folders to this load path
@@ -148,6 +149,10 @@ module ActiveAdmin
     def register_page(name, options = {}, &block)
       ns = options.fetch(:namespace){ default_namespace }
       namespace(ns).register_page name, options, &block
+    end
+
+    def register_share(name, &block)
+      shares[name] = block
     end
 
     # Whether all configuration files have been loaded
