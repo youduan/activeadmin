@@ -143,6 +143,8 @@ describe ActiveAdmin::Application do
       application.register_share("Share", &share)
       expect(application.shares.size).to eq 1
       expect(application.shares).to include("Share" => share)
+
+      expect(application.shares).to be_a ActiveAdmin::Share::DSL::Store
     end
   end
 end

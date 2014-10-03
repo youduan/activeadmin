@@ -18,7 +18,7 @@ module ActiveAdmin
     attr_reader :namespaces, :shares
     def initialize
       @namespaces = {}
-      @shares     = {}
+      @shares     = ActiveAdmin::Share::Store.new
     end
 
     # Load paths for admin configurations. Add folders to this load path
