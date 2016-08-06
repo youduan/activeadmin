@@ -17,7 +17,9 @@ rvm:
 env:
   matrix:
     - RAILS=3.2.22
-    - RAILS=4.2.5
+    - RAILS=4.0.13
+    - RAILS=4.1.16
+    - RAILS=4.2.7
     - RAILS=5.0.0
   global:
     - JRUBY_OPTS="-J-Xmx1024m --debug"
