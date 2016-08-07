@@ -56,8 +56,9 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'simplecov', require: false           # Test coverage generator. Go to /coverage/ after running tests
-  gem 'coveralls', require: false           # Test coverage website. Go to https://coveralls.io
+  gem 'coveralls', require: false, platforms: [:ruby_20, :ruby_21, :ruby_22, :ruby_23]           # Test coverage website. Go to https://coveralls.io
+  gem 'simplecov', require: false, platforms: [:ruby_20, :ruby_21, :ruby_22, :ruby_23]           # Test coverage generator. Go to /coverage/ after running tests
+  gem 'tins', '1.4.0', platforms: [:ruby_20, :ruby_21, :ruby_22, :ruby_23]  # fix dependency for simplecov
   gem 'cucumber-rails', require: false
   gem 'cucumber', '1.3.20'
   gem 'database_cleaner'

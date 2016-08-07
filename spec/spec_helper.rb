@@ -8,10 +8,12 @@ Bundler.setup
 require 'detect_rails_version'
 ENV['RAILS'] = detect_rails_version
 
-require 'simplecov'
+if RUBY_VERSION[0] == "2"
+  require 'simplecov'
 
-SimpleCov.start do
-  add_filter 'spec/'
-  add_filter 'features/'
-  add_filter 'bundle/' # for Travis
+  SimpleCov.start do
+    add_filter 'spec/'
+    add_filter 'features/'
+    add_filter 'bundle/' # for Travis
+  end
 end
