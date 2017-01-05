@@ -16,7 +16,7 @@
   }
   #active_admin_content > #main_content_wrapper {
     float: right !important;
-    width: 900px !important
+    width: 1300px !important
   }
   #active_admin_content > #main_content_wrapper #main_content {
     margin-left: 350px !important;
@@ -57,6 +57,13 @@
     margin-left: 1%;
     margin-right: 1% !important;
   }
+
+  #title_bar {
+    #titlebar_right {
+      text-align: left;
+    }
+  }
+
 }
 
 @each $rtl_locale in $rtl_locales {
