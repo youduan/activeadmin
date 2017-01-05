@@ -64,10 +64,9 @@
     }
   }
 
-  .active_admin > ul#utility_nav > ul {
+  #header ul#utility_nav > li ul{
     right: 0;
   }
-
 }
 
 @each $rtl_locale in $rtl_locales {
