@@ -64,6 +64,10 @@
     }
   }
 
+  #utility_nav > ul {
+    right : 0;
+  }
+
 }
 
 @each $rtl_locale in $rtl_locales {
