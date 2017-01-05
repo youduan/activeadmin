@@ -14,9 +14,9 @@
     width: 270px !important;
     margin-left: 0px !important;
   }
-  #active_admin_content > #main_content_wrapper {
+  .active_admin #active_admin_content > #main_content_wrapper {
     float: right !important;
-    width: 100% !important;
+    width: 100%;
   }
   #active_admin_content > #main_content_wrapper #main_content {
     margin-left: 350px !important;
