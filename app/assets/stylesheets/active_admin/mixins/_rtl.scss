@@ -9,6 +9,10 @@
     float: right !important;
   }
 
+  form fieldset > ol > li fieldset legend {
+    right: 0;
+  }
+
   #sidebar {
     float: left !important;
     width: 270px !important;
