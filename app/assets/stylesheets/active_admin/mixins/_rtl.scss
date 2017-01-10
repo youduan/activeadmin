@@ -3,6 +3,7 @@
 
   body {
     direction: rtl;
+    display: none;
   }
 
   form fieldset ol > li label {
@@ -21,7 +22,7 @@
   }
 
   #active_admin form fieldset > ol > li.check_boxes fieldset ol li, #active_admin form fieldset > ol > li.radio fieldset ol li {
-     padding: 0;
+    padding: 0;
     border: 0;
   }
 
