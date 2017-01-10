@@ -2,7 +2,7 @@
 @mixin rtl {
 
   body {
-    direction: rtl; 
+    direction: rtl;
   }
 
   form fieldset ol > li label {
@@ -12,6 +12,22 @@
   form fieldset > ol > li fieldset legend {
     right: 0;
   }
+
+  #active_admin form fieldset > ol > li.check_boxes fieldset ol, #active_admin form fieldset > ol > li.radio fieldset ol {
+    float: right;
+    width: 74%;
+    margin: 0;
+    padding: 0 20% 0 0;
+  }
+
+  #active_admin form fieldset > ol > li.check_boxes fieldset ol li, #active_admin form fieldset > ol > li.radio fieldset ol li {
+    padding: 0;
+    border: 0;
+  }
+
+  #active_admin form fieldset > ol > li.check_boxes fieldset ol li.choice, #active_admin form fieldset > ol > li.radio fieldset ol li.choice {
+    float: right;
+  } 
 
   #sidebar {
     float: left !important;
