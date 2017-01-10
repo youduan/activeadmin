@@ -13,19 +13,19 @@
     right: 0;
   }
 
-  #active_admin form fieldset > ol > li.check_boxes fieldset ol, #active_admin form fieldset > ol > li.radio fieldset ol {
+  .active_admin form fieldset > ol > li.check_boxes fieldset ol.choices-group, #active_admin form fieldset > ol > li.radio fieldset ol.choices-group {
     float: right;
     width: 74%;
     margin: 0;
     padding: 0 20% 0 0;
   }
 
-  #active_admin form fieldset > ol > li.check_boxes fieldset ol li, #active_admin form fieldset > ol > li.radio fieldset ol li {
+  .active_admin form fieldset > ol > li.check_boxes fieldset ol.choices-group li, #active_admin form fieldset > ol > li.radio fieldset ol.choices-group li {
     padding: 0;
     border: 0;
   }
 
-  #active_admin form fieldset > ol > li.check_boxes fieldset ol li.choice, #active_admin form fieldset > ol > li.radio fieldset ol li.choice {
+  .active_admin form fieldset > ol > li.check_boxes fieldset ol.choices-group li.choice, #active_admin form fieldset > ol > li.radio fieldset ol.choices-group li.choice {
     float: right;
   } 
 
