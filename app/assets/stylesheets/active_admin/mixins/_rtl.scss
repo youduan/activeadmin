@@ -13,9 +13,9 @@
     right: 0;
   }
 
-  form fieldset > ol > li fieldset {
+  #active_admin_content form fieldset > ol > li fieldset {
     &:not(.has_many_fields) ol {
-      float: float_to_right;
+      float: right;
       width: 74%;
       margin: 0;
       padding: 0 20% 0 9;
