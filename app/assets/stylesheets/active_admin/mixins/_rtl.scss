@@ -13,6 +13,20 @@
     right: 0;
   }
 
+  form fieldset > ol > li fieldset {
+    &:not(.has_many_fields) ol {
+      float: left;
+      width: 74%;
+      margin: 0;
+      padding: 0 0 0 9%;
+
+      li {
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+
   #sidebar {
     float: left !important;
     width: 270px !important;
