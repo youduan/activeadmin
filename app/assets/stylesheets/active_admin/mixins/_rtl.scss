@@ -13,22 +13,31 @@
     right: 0;
   }
 
-  #active_admin_content form fieldset > ol > li fieldset {
-    &:not(.has_many_fields) ol {
-      float: right;
-      width: 74%;
-      margin: 0;
-      padding: 0 20% 0 9;
-
-      li {
-        padding: 0;
-        border: 0;
-        .choice{
-          float: right;
+  #active_admin {
+    form fieldset {
+      > ol {
+        > li {
+          &.check_boxes , &.radio {
+            fieldset {
+              ol {
+                float: right;
+                width: 74%;
+                margin: 0;
+                padding: 0 20% 0 0;
+                li {
+                  padding: 0;
+                  border: 0;
+                  &.choice{
+                    float: right;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-  }
+  }    
 
   #sidebar {
     float: left !important;
