@@ -15,14 +15,17 @@
 
   form fieldset > ol > li fieldset {
     &:not(.has_many_fields) ol {
-      float: left;
+      float: float_to_right;
       width: 74%;
       margin: 0;
-      padding: 0 0 0 9%;
+      padding: 0 20% 0 9;
 
       li {
         padding: 0;
         border: 0;
+        .choice{
+          float: right;
+        }
       }
     }
   }
