@@ -13,6 +13,11 @@
     right: 0;
   }
 
+  form .html_editor .wrap {
+    width: 76%;
+    float: right;
+  }
+
   .active_admin form fieldset > ol > li.check_boxes fieldset ol.choices-group, #active_admin form fieldset > ol > li.radio fieldset ol.choices-group {
     float: right;
     width: 74%;
